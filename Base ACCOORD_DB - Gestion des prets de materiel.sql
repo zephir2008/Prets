@@ -1,8 +1,8 @@
-﻿-- Créer la base de données
-create database if not exists accoord_db;
-
--- Créer l'administrateur de la base
+﻿-- Créer l'administrateur de la base
 create user if not exists 'adm_accoord'@`localhost` identified by 'admlocal';
+
+-- Créer la base de données
+create database if not exists accoord_db;
 grant all privileges on accoord_db.* to 'adm_accoord'@`localhost`;
 flush privileges;
 
@@ -28,7 +28,8 @@ alter table if exists remarque_pret
 
 -- Création des tables
 create or replace table usager (
-	usr_id				char(36) not null default UUID() primary key,
+	usr_id				char(36) PRIMARY KEY DEFAULT (uuid()),
+	usr_is_valid		bool NOT NULL DEFAULT TRUE,
 	usr_mail			varchar(200) not null,
 	usr_phone			varchar(10),
 	
@@ -37,19 +38,19 @@ create or replace table usager (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Utilisateurs';
 
 create or replace table charte_pret (
-	chp_date_charte		timestamp not null default CURRENT_TIMESTAMP primary key,
+	chp_date_charte		date PRIMARY KEY DEFAULT CURRENT_TIMESTAMP,
 	chp_is_valide		bool not null default true,
 	chp_texte			text not null
 )  ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Table de la charte de prêt.';
 
 create or replace table categorie_materiel (
-	cat_id				char(36) not null default UUID() primary key,
+	cat_id				char(36) PRIMARY KEY DEFAULT (UUID()),
 	cat_label			varchar(100) not null,
 	cat_prix_moyen_ht	decimal(6,2)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Table de regroupement des différentes catégories de matériel en prêt.';
 
 create or replace table materiel (
-	mat_id				char(36) not null default UUID() primary key,
+	mat_id				char(36) PRIMARY KEY DEFAULT (UUID()),
 	mat_label			varchar(100) not null,
 	mat_cat				char(36) not null,
 	mat_id_glpi			integer not null
@@ -57,7 +58,7 @@ create or replace table materiel (
 
 create or replace table remarque_pret (
 	rmp_fch_id			char(36) not null,
-	rmp_date			timestamp not null default CURRENT_TIMESTAMP,
+	rmp_date			date not null default CURRENT_TIMESTAMP,
 	rmp_texte			text not null,
 
 	constraint pk_rmp
@@ -66,7 +67,7 @@ create or replace table remarque_pret (
 
 create or replace table remarque_materiel (
 	rmm_mat_id			char(36) not null,
-	rmm_date			timestamp not null default CURRENT_TIMESTAMP,
+	rmm_date			date not null default CURRENT_TIMESTAMP,
 	rmm_texte			text not null,
 
 	constraint pk_rmm
@@ -74,9 +75,10 @@ create or replace table remarque_materiel (
 )  ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Table de regroupement des remarques attachés aux matériels.';
 
 create or replace table fiche_pret (
-	fch_id				char(36) not null default UUID() primary key,
+	fch_id				char(36) PRIMARY KEY DEFAULT (UUID()),
+	fch_is_valid		bool NOT NULL DEFAULT TRUE,
 	fch_numero			int not null auto_increment,
-	fch_date			timestamp not null default CURRENT_TIMESTAMP,
+	fch_date			date not null default CURRENT_TIMESTAMP,
 	fch_is_closed		bool not null default false,
 	fch_date_pret		datetime not null,
 	fch_date_ret		datetime default null,
@@ -109,8 +111,7 @@ alter table fiche_pret
 	add constraint fk_fiche_emprunteur
 		foreign key( fch_emprunteur ) references usager (usr_id ),
 	add constraint fk_given_to
-		foreign key (fch_given_to) references usager (usr_id )
-	;
+		foreign key (fch_given_to) references usager (usr_id );
 
 
 
@@ -176,7 +177,7 @@ CREATE OR REPLACE VIEW vListCategorie AS
 CREATE OR REPLACE VIEW vReadCharte AS
 	SELECT
 		cp.chp_date_charte 					AS `Date de rédaction`,
-		IF(cp.chp_is_valide,'Oui','Non')	AS `En cours d'utilisation`,
+		IF(cp.chp_is_valide,'Oui','Non')	AS `En cours d''utilisation`,
 		cp.chp_texte						AS `Charte`
 	FROM charte_pret cp
 ;$$
@@ -208,16 +209,16 @@ $$
 
 
 -- Cherche un utilisateur
-/*CREATE OR REPLACE FUNCTION fLookForUser( name varchar(200) ) RETURNS ROW TYPE OF usager
+/*CREATE OR REPLACE FUNCTION fLookForUser( name varchar(200) ) RETURNS ROW(
 BEGIN
 	SELECT
 		u.*
 	FROM usager u
 	WHERE u.usr_mail like concat('%',name,'%');
-EN*/
+END*/
 $$
 
-CREATE FUNCTION ucfirst(str_value VARCHAR(5000)) RETURNS VARCHAR(5000)
+CREATE OR REPLACE FUNCTION ucfirst(str_value VARCHAR(5000)) RETURNS VARCHAR(5000)
 DETERMINISTIC
 BEGIN
     RETURN CONCAT(UCASE(LEFT(str_value, 1)),SUBSTRING(str_value, 2));
