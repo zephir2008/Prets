@@ -27,10 +27,19 @@ alter table if exists remarque_pret
 
 
 -- Création des tables
+DROP TABLE IF EXISTS MAIL_EXCHANGE;
+CREATE TABLE MAIL_EXCHANGE (
+	id					integer PRIMARY KEY AUTO_INCREMENT,
+	mail_usrdispname	varchar(255) NOT NULL,
+	mail_mail			varchar(255) NOT NULL,
+	mail_firstname		varchar(255),
+	mail_lastname		varchar(255)
+);
+
 create or replace table usager (
 	usr_id				char(36) PRIMARY KEY DEFAULT (uuid()),
 	usr_is_valid		bool NOT NULL DEFAULT TRUE,
-	usr_mail			varchar(200) not null,
+	usr_mail			varchar(255) not null,
 	usr_phone			varchar(10),
 	
 	constraint un_usager
@@ -290,3 +299,17 @@ insert into remarque_materiel (rmm_mat_id,rmm_texte) values
 
 insert into remarque_pret (rmp_fch_id, rmp_texte) values
 	((select fch_id from fiche_pret limit 1), 'Essaie commentaire de fiche de prét de matériel');
+
+-- Chargement des données
+LOAD DATA INFILE './listUsagers.csv'
+-- LOAD DATA INFILE './listUsagers.csv'
+	INTO TABLE MAIL_EXCHANGE
+	FIELDS TERMINATED BY ","
+	LINES TERMINATED BY "\n"
+	IGNORE 1 ROWS
+	(mail_usrdispname, @mail_mail, @mail_firstname, @mail_lastname)
+	SET
+		mail_firstname = IF( LENGTH(@mail_firstname)=0, NULL, ucfirst(@mail_firstname)),
+		mail_lastname = IF( LENGTH(@mail_lastname)<2, NULL, UCASE(@mail_lastname)),
+		mail_mail = LCASE(@mail_mail) 
+;

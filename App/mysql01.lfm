@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 440
+  Height = 635
+  Top = 137
+  Width = 810
+  Caption = 'Form1'
+  ClientHeight = 635
+  ClientWidth = 810
+  OnActivate = FormActivate
+  OnClose = FormClose
+  LCLVersion = '2.0.12.0'
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 270
+    Top = 56
+    Width = 435
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object Afficher: TButton
+    Left = 464
+    Height = 35
+    Top = 64
+    Width = 130
+    Caption = 'Afficher'
+    OnClick = AfficherClick
+    TabOrder = 1
+  end
+  object MySQLConnection: TMySQL57Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'accoord_db'
+    KeepConnection = False
+    Password = 'admlocal'
+    Transaction = SQLTransaction1
+    UserName = 'adm_accoord'
+    HostName = 'localhost'
+    SkipLibraryVersionCheck = False
+    Left = 8
+    Top = 8
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = MySQLConnection
+    Left = 36
+    Top = 8
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = MySQLConnection
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'Select * from MAIL_EXCHANGE;'
+    )
+    Params = <>
+    Left = 68
+    Top = 8
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 96
+    Top = 8
+  end
+end
