@@ -309,6 +309,7 @@ LOAD DATA INFILE './listUsagers.csv'
 	IGNORE 1 ROWS
 	(mail_usrdispname, @mail_mail, @mail_firstname, @mail_lastname)
 	SET
+		mail_lastname = LEFT( @mail_lastname, LENGTH(@mail_lastname)-1),
 		mail_firstname = IF( LENGTH(@mail_firstname)=0, NULL, ucfirst(@mail_firstname)),
 		mail_lastname = IF( LENGTH(@mail_lastname)<2, NULL, UCASE(@mail_lastname)),
 		mail_mail = LCASE(@mail_mail) 
