@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79E85D21-71B2-A3EE-BB8E-CADB2CB8EB02" name="emprunteur">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:46:51 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>emprunteur</shortName>
+<synonym>personne</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ident" id="E7345F4D-E6FC-DB41-B4E0-E9E23A84AC58">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:47:40 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom" id="91191241-9A17-2AF0-681D-8D526AF2A42E">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:48:36 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenom" id="40E71F05-1215-A0FB-8265-5D21495ABB2F">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:48:53 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresse_mail" id="EBC76768-F4B9-3183-D15C-519C3FDCFFF0">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:49:22 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telephone" id="2B3912DD-1ABB-2066-16DC-BB0C11189373">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:49:58 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C4CDA616-D0FE-08E7-C29A-E22FE8B3F630" name="emprunteur PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:48:15 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E7345F4D-E6FC-DB41-B4E0-E9E23A84AC58</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

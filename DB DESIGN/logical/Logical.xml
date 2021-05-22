@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4F360585-9731-C20E-5B11-70FF93F0E58B" mainViewID="E7FF74DA-1E91-980E-C135-8151022ECD3B">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:46:29 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

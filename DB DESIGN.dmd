@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DB DESIGN" id="CE1ACA60-64E3-CB65-D398-41F1E484D2CE" version="3.5">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:46:29 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CE1ACA60-64E3-CB65-D398-41F1E484D2CE</designId>
+</OSDM_Design>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E4C9315-6918-BD6E-A32A-BE1A151FAA94" name="fiche_de_pret">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:50:39 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero" id="C2561244-A59D-6AE3-374A-83737691D97B">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:50:54 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ident_emprunteur" id="B2D37E6B-C955-BD2A-68BC-8B22639B4858">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:51:22 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E12BBAC-6891-0E3E-902A-835F7519B20F" name="fiche_de_pret PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 08:51:09 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C2561244-A59D-6AE3-374A-83737691D97B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
