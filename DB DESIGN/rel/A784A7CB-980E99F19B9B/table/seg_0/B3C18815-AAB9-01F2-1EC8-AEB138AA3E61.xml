@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3C18815-AAB9-01F2-1EC8-AEB138AA3E61" name="caracteristique">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>8080311E-850B-4A3A-ACDD-C43FC4A17DEF</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="caracteristique_ID" id="7A7AF402-B515-66FE-8148-84B07155FCB3">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:10:04 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="etat_materiel_etat_materiel_ID" id="8D309558-0C7C-44B6-6271-8F78D0F4B543">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indice" id="D3EEA3E0-978F-1FB6-EB43-436D11F79428">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>BDFC4EF4-F0F4-878A-61FB-AB9C77BCD1B0</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="label" id="62E2BDD4-0C6E-FC75-7A44-8B6C1009F380">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>8D3EAEDB-C3CE-957A-2268-E557E4222D88</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="identification" id="F9F3D966-67D2-014E-6D9E-BE333138A637">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:00:10 UTC</createdTime>
+<generatorID>690DF50C-984A-5BDF-B68E-02652171DE84</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD93A8B4-A32C-3737-E6B2-14D17F84D9C5" referredColumn="150BFB2C-D980-7A31-FD8C-E4FB3FF32809"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03A4467B-9976-3F89-83E3-CE4384652814" name="caracteristique_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:10:04 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7A7AF402-B515-66FE-8148-84B07155FCB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C92057FA-4D06-C9BE-6271-9507318DECF8" name="caracteristique__UN">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>2E2C6EB4-6169-19FF-9062-2FC15B6FAA1D</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="3E34233E-C9EA-3251-8067-79CDE659C27B" name="caracteristique_identification_UN">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:00:10 UTC</createdTime>
+<generatorID>DBF6CB6E-557D-7E93-B49A-443D12601431</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9F3D966-67D2-014E-6D9E-BE333138A637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FDA5A39-662D-ED02-470D-BB66CFDD0FA0" name="caracteristique_etat_materiel_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:00:10 UTC</createdTime>
+<generatorID>110AD547-7E91-E43F-3344-873DD6A50FCF</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9F3D966-67D2-014E-6D9E-BE333138A637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

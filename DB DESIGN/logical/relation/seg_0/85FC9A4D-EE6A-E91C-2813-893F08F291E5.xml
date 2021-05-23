@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="materiel_etat" directorySegmentName="seg_0" id="85FC9A4D-EE6A-E91C-2813-893F08F291E5">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:59:04 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<sourcePk>61B89026-F3D0-2DC3-BB85-13C5255CC634</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>dispose de </nameOnSource>
+<nameOnTarget>concerne</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>43D6A1E0-7CE8-0992-BF09-C3FFBD61BD94</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>538E71D8-E619-2DA5-648C-5F73DFA414F5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

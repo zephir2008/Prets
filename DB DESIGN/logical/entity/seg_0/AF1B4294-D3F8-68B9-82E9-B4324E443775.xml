@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79E85D21-71B2-A3EE-BB8E-CADB2CB8EB02" name="emprunteur">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AF1B4294-D3F8-68B9-82E9-B4324E443775" name="remarque">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:46:51 UTC</createdTime>
+<createdTime>2021-05-22 09:24:48 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
 <item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
@@ -14,85 +14,85 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>emprunteur</shortName>
-<synonym>personne</synonym>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="identifiant" id="E7345F4D-E6FC-DB41-B4E0-E9E23A84AC58">
+<Attribute name="numero" id="DD260FE6-3338-6F78-D86A-3DB80E9199B0">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:47:40 UTC</createdTime>
+<createdTime>2021-05-22 09:25:02 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
 <item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_redaction" id="029C0333-8857-F560-9044-CB1369854C57">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:26:16 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="remarque" id="EC7AC08F-F114-7D93-9636-9ADD1F184CF8">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:26:56 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT036</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reference" id="6408C574-8EA3-FFE9-616E-0A198C4C7024">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:27:52 UTC</createdTime>
+<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<referedAttribute>C2561244-A59D-6AE3-374A-83737691D97B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="identifiant" id="71D07AD0-D69B-671F-5BC1-E37114F0BD51">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:27:52 UTC</createdTime>
+<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<referedAttribute>028EDBB8-E9E3-D115-EE4B-364E1A924661</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nom" id="91191241-9A17-2AF0-681D-8D526AF2A42E">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:48:36 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>70 CHAR</dataTypeSize>
-<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="prenom" id="40E71F05-1215-A0FB-8265-5D21495ABB2F">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:48:53 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>70 CHAR</dataTypeSize>
-<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="adresse_mail" id="EBC76768-F4B9-3183-D15C-519C3FDCFFF0">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:49:22 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>300 CHAR</dataTypeSize>
-<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="telephone" id="2B3912DD-1ABB-2066-16DC-BB0C11189373">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:49:58 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>10 BYTE</dataTypeSize>
-<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="C4CDA616-D0FE-08E7-C29A-E22FE8B3F630" name="emprunteur PK">
+<identifier id="4EEB0BD6-6B04-A4D0-61FB-5D223FCA692F" name="remarque_pret PK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:48:15 UTC</createdTime>
+<createdTime>2021-05-22 09:26:09 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
 <item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E7345F4D-E6FC-DB41-B4E0-E9E23A84AC58</attributeRef>
+<attributeRef>DD260FE6-3338-6F78-D86A-3DB80E9199B0</attributeRef>
+<attributeRef>6408C574-8EA3-FFE9-616E-0A198C4C7024</attributeRef>
+<attributeRef>71D07AD0-D69B-671F-5BC1-E37114F0BD51</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

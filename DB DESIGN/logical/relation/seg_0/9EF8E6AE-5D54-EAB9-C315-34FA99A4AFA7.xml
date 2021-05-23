@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pret_remarque" directorySegmentName="seg_0" id="9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:27:52 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<sourcePk>4E12BBAC-6891-0E3E-902A-835F7519B20F</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>avoir</nameOnSource>
+<nameOnTarget>être rattachée à</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0E4C9315-6918-BD6E-A32A-BE1A151FAA94</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AF1B4294-D3F8-68B9-82E9-B4324E443775</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

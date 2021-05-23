@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A91A045-EF1B-B224-FF92-95A4B744500C" name="remarque">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>AF1B4294-D3F8-68B9-82E9-B4324E443775</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero" id="3673D94A-5ED9-1377-DC70-EBD6FB9BF127">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>DD260FE6-3338-6F78-D86A-3DB80E9199B0</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_redaction" id="DDD2404F-D03E-8AFC-BB78-445571C2F630">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>029C0333-8857-F560-9044-CB1369854C57</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="remarque" id="199B8786-B78A-6C08-66EE-BB170A480803">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>EC7AC08F-F114-7D93-9636-9ADD1F184CF8</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT036</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fiche_de_pret_reference" id="4C790B81-37CD-D32D-CDB1-172A69C92053">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>6408C574-8EA3-FFE9-616E-0A198C4C7024</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65AF04C5-FF0A-591D-21B5-7FEB7F9715E3" referredColumn="2DA6A7EE-D3C7-4A10-77B8-C5E8FB865404"/>
+</associations>
+</Column>
+<Column name="fiche_de_pret_emprunteur_identifiant" id="7E66E50B-7F0E-8D8F-554B-B0515F353A74">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>71D07AD0-D69B-671F-5BC1-E37114F0BD51</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65AF04C5-FF0A-591D-21B5-7FEB7F9715E3" referredColumn="F731928B-C1F3-5332-BC70-4ADC2BBA657A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB88E154-9261-A5D9-52CE-27C6D3A921B4" name="remarque_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>4EEB0BD6-6B04-A4D0-61FB-5D223FCA692F</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3673D94A-5ED9-1377-DC70-EBD6FB9BF127"/>
+<colUsage columnID="4C790B81-37CD-D32D-CDB1-172A69C92053"/>
+<colUsage columnID="7E66E50B-7F0E-8D8F-554B-B0515F353A74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8601EA73-B150-FB99-30E5-A568AB3ADA03" name="remarque_fiche_de_pret_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C790B81-37CD-D32D-CDB1-172A69C92053"/>
+<colUsage columnID="7E66E50B-7F0E-8D8F-554B-B0515F353A74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

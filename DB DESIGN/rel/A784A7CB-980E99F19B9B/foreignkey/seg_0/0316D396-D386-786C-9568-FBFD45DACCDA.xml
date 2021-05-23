@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0316D396-D386-786C-9568-FBFD45DACCDA" containerWithKeyObject="B6C06B26-86F4-E3BE-5B41-EE9C1AC79718" localFKIndex="CA850F5F-3D31-F098-CCE1-8D2903ED4560" name="etat_materiel_caracteristique_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:03:56 UTC</createdTime>
+<generatorID>EA07CEAE-A751-502D-F0DB-A9D33CA06F3C</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<referredTableLongName>caracteristique</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B3C18815-AAB9-01F2-1EC8-AEB138AA3E61</referredTableID>
+<keyObject>C92057FA-4D06-C9BE-6271-9507318DECF8</keyObject>
+<referredKeyID>C92057FA-4D06-C9BE-6271-9507318DECF8</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

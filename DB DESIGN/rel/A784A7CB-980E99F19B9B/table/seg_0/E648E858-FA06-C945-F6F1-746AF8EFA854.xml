@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E648E858-FA06-C945-F6F1-746AF8EFA854" name="materiel">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>43D6A1E0-7CE8-0992-BF09-C3FFBD61BD94</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type_materiel_type_materiel_ID" id="24DA3B4E-7CDF-E350-F891-601BA028FCC9">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:03:56 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="107EC42A-D99A-96FE-D9DF-5D25984D071C" referredColumn="D1470EA0-28FF-884B-F853-64931692C223"/>
+</associations>
+</Column>
+<Column name="identification" id="9FEC1CB6-C8A6-C1AD-EA2E-C4A673BFFB90">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>0861EEDB-8885-E0F0-E551-20BE544FF6CD</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_glpi" id="DDD17548-EFE2-6380-1A6F-9364B5E60AA1">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>3AE27D8F-DB1D-AA2B-8718-465C14387BA6</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serial_number" id="40EB2176-FD78-C301-08F5-0898D150867F">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[référence (constructeur, S/N, etc.)]]></commentInRDBMS>
+<generatorID>05E8D305-65BB-4112-B17B-665C032D47A9</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="4012D723-12CC-989D-57C1-5690DA253CC9">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:11:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Domaine de valeur disponible]]></commentInRDBMS>
+<generatorID>D79FC582-51CE-7E3D-4BBE-3673939C3A83</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>D7D7BF91-5D9E-F60F-D11E-6325638EE67B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modele" id="CB233094-A7C0-CA6B-8AC9-10483D949BE6">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:11:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Modèle ou  référence constructeur du matériel]]></commentInRDBMS>
+<generatorID>03381D43-8254-4AF8-1D77-1F42876EAE72</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F77DAF05-5A4C-9CA3-80B2-AFC831043C1E" name="materiel_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:03:56 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="24DA3B4E-7CDF-E350-F891-601BA028FCC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44CC8F6C-F910-2E6D-5BC7-BB3DF399A2B7" name="materiel_identification_UN">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>61B89026-F3D0-2DC3-BB85-13C5255CC634</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FEC1CB6-C8A6-C1AD-EA2E-C4A673BFFB90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="164FC2DE-5DDA-D69D-0E69-176EBD63285C" name="materiel_type_materiel_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:03:56 UTC</createdTime>
+<generatorID>F8BB41D4-BDF3-ABAF-872F-80C39F9E9A1C</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24DA3B4E-7CDF-E350-F891-601BA028FCC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

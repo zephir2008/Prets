@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="F02C5C3B-9766-99BC-113E-19241801D866">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:29:13 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<sourcePk>61B89026-F3D0-2DC3-BB85-13C5255CC634</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>est rattaché à</nameOnSource>
+<nameOnTarget>référence</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>43D6A1E0-7CE8-0992-BF09-C3FFBD61BD94</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0E4C9315-6918-BD6E-A32A-BE1A151FAA94</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

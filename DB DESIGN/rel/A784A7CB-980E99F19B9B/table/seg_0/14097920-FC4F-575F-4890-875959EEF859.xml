@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14097920-FC4F-575F-4890-875959EEF859" name="type_materiel">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>2E45127B-D09B-AACA-A376-5E0DBBF2B4B9</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type_materiel_ID" id="D1470EA0-28FF-884B-F853-64931692C223">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:03:56 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="identification" id="3FAA5839-C1DA-3C93-0E28-68477BA43B14">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>0861EEDB-8885-E0F0-E551-20BE544FF6CD</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22AEBB3C-0C48-B736-888F-029407473C7C" referredColumn="9FEC1CB6-C8A6-C1AD-EA2E-C4A673BFFB90"/>
+</associations>
+</Column>
+<Column name="type" id="010B8353-2149-771E-F411-CE32DB097500">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Domaine de valeur disponible]]></commentInRDBMS>
+<generatorID>D79FC582-51CE-7E3D-4BBE-3673939C3A83</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>D7D7BF91-5D9E-F60F-D11E-6325638EE67B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modele" id="F471F94D-976E-F6D2-941D-95507017E87B">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Modèle ou  référence constructeur du matériel]]></commentInRDBMS>
+<generatorID>03381D43-8254-4AF8-1D77-1F42876EAE72</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DEA467E2-F1CC-515C-7483-734639B9E21C" name="type_materiel_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 18:03:56 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D1470EA0-28FF-884B-F853-64931692C223"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="439B9EB2-FE13-7DB3-AA86-A4375FB08DE0" name="type_materiel_identification_UN">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>61B89026-F3D0-2DC3-BB85-13C5255CC634</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FAA5839-C1DA-3C93-0E28-68477BA43B14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01B69656-CE93-9DB1-DCBF-9AB5931C55AA" name="type_materiel_materiel_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>3FEB767E-C854-8A6E-8F33-9E6099D14C96</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FAA5839-C1DA-3C93-0E28-68477BA43B14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

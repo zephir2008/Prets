@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="65AF04C5-FF0A-591D-21B5-7FEB7F9715E3" containerWithKeyObject="0A91A045-EF1B-B224-FF92-95A4B744500C" localFKIndex="8601EA73-B150-FB99-30E5-A568AB3ADA03" name="remarque_fiche_de_pret_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<referredTableLongName>fiche_de_pret</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>960EDFE0-C2DA-BDE1-282A-5AD149E9BA1D</referredTableID>
+<keyObject>0C7E6805-55F9-5184-769C-D890676E9C45</keyObject>
+<referredKeyID>0C7E6805-55F9-5184-769C-D890676E9C45</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>reference,emprunteur_identifiant</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

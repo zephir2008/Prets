@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="960EDFE0-C2DA-BDE1-282A-5AD149E9BA1D" name="fiche_de_pret">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>0E4C9315-6918-BD6E-A32A-BE1A151FAA94</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reference" id="2DA6A7EE-D3C7-4A10-77B8-C5E8FB865404">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>C2561244-A59D-6AE3-374A-83737691D97B</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emprunteur_identifiant" id="F731928B-C1F3-5332-BC70-4ADC2BBA657A">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>028EDBB8-E9E3-D115-EE4B-364E1A924661</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D41CB4C-90C8-C801-0D78-E3D444F3C648" referredColumn="9F05C966-1F07-C6A0-ADE9-4B01351BFBD5"/>
+</associations>
+</Column>
+<Column name="etat" id="81C3DD57-C3B3-2BCF-D5D1-05337AF705CF">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>11796E55-614E-97C0-13EB-1A366B23D2CE</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>9534DD30-BEB6-2438-0744-3BC2AEE6177C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="site_code" id="7B8233B2-EF30-0B68-5EE2-C533C51D4B60">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>F260735D-5866-1CF4-0042-008BA8CACD39</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D145274D-BC4A-D2CE-0C51-DBE98F7CE117" referredColumn="10AAF0EC-CA89-D887-2F55-E06FFA30DE35"/>
+</associations>
+</Column>
+<Column name="date_creation" id="AAAEDD91-B1A4-9923-4D97-731CC7E7E9AE">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>AE997DFD-8E56-B2D0-37E1-22A8CBA76EC4</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="materiel_identification" id="27A5FC3D-B908-150B-ADAA-7A5CA81C1C12">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>2FB03BBE-1ADF-480C-4BB7-A9F528983945</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3189F080-35E5-9534-1F5C-4E7B454E5994" referredColumn="9FEC1CB6-C8A6-C1AD-EA2E-C4A673BFFB90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C7E6805-55F9-5184-769C-D890676E9C45" name="fiche_de_pret_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>4E12BBAC-6891-0E3E-902A-835F7519B20F</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DA6A7EE-D3C7-4A10-77B8-C5E8FB865404"/>
+<colUsage columnID="F731928B-C1F3-5332-BC70-4ADC2BBA657A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3327EEC-AA65-2E52-0CE4-D9ED76B09C4F" name="fiche_de_pret_site_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>FEA576D5-A9AC-FE5A-5526-150BDE0D35D7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B8233B2-EF30-0B68-5EE2-C533C51D4B60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C96867D8-A10A-E983-388E-8EB5A55DF7FD" name="fiche_de_pret_emprunteur_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>34225A53-1E9A-0A45-7AA7-0763BAAFB5F1</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F731928B-C1F3-5332-BC70-4ADC2BBA657A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFF90B60-2821-9B1E-58CE-999F9DC479FB" name="fiche_de_pret_materiel_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<generatorID>F02C5C3B-9766-99BC-113E-19241801D866</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27A5FC3D-B908-150B-ADAA-7A5CA81C1C12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

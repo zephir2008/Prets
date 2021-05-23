@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pret_par_site" directorySegmentName="seg_0" id="FEA576D5-A9AC-FE5A-5526-150BDE0D35D7">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:44:34 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+</engineerTo>
+<sourcePk>167C4A6F-BAB2-6FF9-77F0-462A61798AC3</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>est concerné par</nameOnSource>
+<nameOnTarget>concerne</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2BC4AC2F-D1E0-AF6B-DD10-2E9767D09048</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0E4C9315-6918-BD6E-A32A-BE1A151FAA94</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

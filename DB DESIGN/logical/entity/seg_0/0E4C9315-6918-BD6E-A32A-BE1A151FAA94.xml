@@ -4,7 +4,7 @@
 <createdTime>2021-05-22 08:50:39 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,26 +15,79 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="numero" id="C2561244-A59D-6AE3-374A-83737691D97B">
+<Attribute name="reference" id="C2561244-A59D-6AE3-374A-83737691D97B">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-22 08:50:54 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ident_emprunteur" id="B2D37E6B-C955-BD2A-68BC-8B22639B4858">
+<Attribute name="identifiant" id="028EDBB8-E9E3-D115-EE4B-364E1A924661">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:51:22 UTC</createdTime>
+<createdTime>2021-05-22 09:19:14 UTC</createdTime>
+<generatorID>34225A53-1E9A-0A45-7AA7-0763BAAFB5F1</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>E7345F4D-E6FC-DB41-B4E0-E9E23A84AC58</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="etat" id="11796E55-614E-97C0-13EB-1A366B23D2CE">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:21:13 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>9534DD30-BEB6-2438-0744-3BC2AEE6177C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="code" id="F260735D-5866-1CF4-0042-008BA8CACD39">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:44:34 UTC</createdTime>
+<generatorID>FEA576D5-A9AC-FE5A-5526-150BDE0D35D7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>D89566E1-F283-9192-5D45-D57C3DFF10CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_creation" id="AE997DFD-8E56-B2D0-37E1-22A8CBA76EC4">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:51:33 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="identification" id="2FB03BBE-1ADF-480C-4BB7-A9F528983945">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:51:43 UTC</createdTime>
+<generatorID>F02C5C3B-9766-99BC-113E-19241801D866</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>0861EEDB-8885-E0F0-E551-20BE544FF6CD</referedAttribute>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -45,12 +98,14 @@
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-22 08:51:09 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>C2561244-A59D-6AE3-374A-83737691D97B</attributeRef>
+<attributeRef>028EDBB8-E9E3-D115-EE4B-364E1A924661</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
