@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="85CA3CC8-3B9C-E8A1-098C-02C8981008A9" containerWithKeyObject="90C069E5-BDD7-1BDC-A875-155B728EAEC4" localFKIndex="C97FA822-69EA-F0AD-E4CE-ECE7FDA78519" name="pret_emprunteur_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>34225A53-1E9A-0A45-7AA7-0763BAAFB5F1</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<referredTableLongName>emprunteur</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2A000680-B0B1-8D91-AF78-EDADCED5C7CF</referredTableID>
+<keyObject>B8B671CB-E86E-9016-F096-1836C93EC0F1</keyObject>
+<referredKeyID>B8B671CB-E86E-9016-F096-1836C93EC0F1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>adresse_mail</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

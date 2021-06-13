@@ -8,19 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="caracteristique_ID" id="7A7AF402-B515-66FE-8148-84B07155FCB3">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:10:04 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
-<identityColumn>true</identityColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<isSurrogateColumn>true</isSurrogateColumn>
-</Column>
 <Column name="etat_materiel_etat_materiel_ID" id="8D309558-0C7C-44B6-6271-8F78D0F4B543">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 17:58:06 UTC</createdTime>
@@ -40,7 +27,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="label" id="62E2BDD4-0C6E-FC75-7A44-8B6C1009F380">
@@ -63,6 +51,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -72,14 +61,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="03A4467B-9976-3F89-83E3-CE4384652814" name="caracteristique_PK">
+<ind_PK_UK id="D844FC84-689F-4536-B106-9B557BEFC6B9" name="caracteristique_PK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:10:04 UTC</createdTime>
+<createdTime>2021-05-23 19:40:59 UTC</createdTime>
+<generatorID>15E4B135-14A5-822C-899B-5DFE3461C476</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7A7AF402-B515-66FE-8148-84B07155FCB3"/>
+<colUsage columnID="D3EEA3E0-978F-1FB6-EB43-436D11F79428"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C92057FA-4D06-C9BE-6271-9507318DECF8" name="caracteristique__UN">

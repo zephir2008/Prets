@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E4C9315-6918-BD6E-A32A-BE1A151FAA94" name="fiche_de_pret">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E4C9315-6918-BD6E-A32A-BE1A151FAA94" name="pret">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-22 08:50:39 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
@@ -15,30 +15,59 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="reference" id="C2561244-A59D-6AE3-374A-83737691D97B">
+<Attribute name="date_creation" id="AE997DFD-8E56-B2D0-37E1-22A8CBA76EC4">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:50:54 UTC</createdTime>
+<createdTime>2021-05-22 09:51:33 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
 <item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="identifiant" id="028EDBB8-E9E3-D115-EE4B-364E1A924661">
+<Attribute name="adresse_mail" id="5203015F-1D03-0265-0768-5CAA0DF014BA">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 09:19:14 UTC</createdTime>
+<createdTime>2021-06-13 12:32:42 UTC</createdTime>
 <generatorID>34225A53-1E9A-0A45-7AA7-0763BAAFB5F1</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
 <item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
-<referedAttribute>E7345F4D-E6FC-DB41-B4E0-E9E23A84AC58</referedAttribute>
+<referedAttribute>EBC76768-F4B9-3183-D15C-519C3FDCFFF0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Li" id="F260735D-5866-1CF4-0042-008BA8CACD39">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-22 09:44:34 UTC</createdTime>
+<generatorID>FEA576D5-A9AC-FE5A-5526-150BDE0D35D7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>D89566E1-F283-9192-5D45-D57C3DFF10CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_glpi" id="C64AFE0D-43F0-2FF9-6A6A-41F6934861DB">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:34:32 UTC</createdTime>
+<generatorID>F02C5C3B-9766-99BC-113E-19241801D866</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>3AE27D8F-DB1D-AA2B-8718-465C14387BA6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="etat" id="11796E55-614E-97C0-13EB-1A366B23D2CE">
@@ -53,59 +82,21 @@
 <domain>9534DD30-BEB6-2438-0744-3BC2AEE6177C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="code" id="F260735D-5866-1CF4-0042-008BA8CACD39">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 09:44:34 UTC</createdTime>
-<generatorID>FEA576D5-A9AC-FE5A-5526-150BDE0D35D7</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
-</engineerTo>
-<referedAttribute>D89566E1-F283-9192-5D45-D57C3DFF10CD</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="date_creation" id="AE997DFD-8E56-B2D0-37E1-22A8CBA76EC4">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 09:51:33 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="identification" id="2FB03BBE-1ADF-480C-4BB7-A9F528983945">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:51:43 UTC</createdTime>
-<generatorID>F02C5C3B-9766-99BC-113E-19241801D866</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
-</engineerTo>
-<referedAttribute>0861EEDB-8885-E0F0-E551-20BE544FF6CD</referedAttribute>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="4E12BBAC-6891-0E3E-902A-835F7519B20F" name="fiche_de_pret PK">
+<identifier id="55E1EA77-4951-A495-B47A-90741C669465" name="pret PK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 08:51:09 UTC</createdTime>
+<createdTime>2021-05-23 19:44:37 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="false"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>C2561244-A59D-6AE3-374A-83737691D97B</attributeRef>
-<attributeRef>028EDBB8-E9E3-D115-EE4B-364E1A924661</attributeRef>
+<attributeRef>F260735D-5866-1CF4-0042-008BA8CACD39</attributeRef>
+<attributeRef>5203015F-1D03-0265-0768-5CAA0DF014BA</attributeRef>
+<attributeRef>AE997DFD-8E56-B2D0-37E1-22A8CBA76EC4</attributeRef>
+<attributeRef>C64AFE0D-43F0-2FF9-6A6A-41F6934861DB</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A91A045-EF1B-B224-FF92-95A4B744500C" name="remarque">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="071A9DA8-E52D-FDCC-D288-19072D3FAD5D" name="remarque">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>AF1B4294-D3F8-68B9-82E9-B4324E443775</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="numero" id="3673D94A-5ED9-1377-DC70-EBD6FB9BF127">
+<Column name="numero" id="6E5A5ECA-C419-903F-5BE1-D5B09F8E506F">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>DD260FE6-3338-6F78-D86A-3DB80E9199B0</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_redaction" id="DDD2404F-D03E-8AFC-BB78-445571C2F630">
+<Column name="date_redaction" id="3FC629E9-BC06-750A-AD91-79DD56987B7B">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>029C0333-8857-F560-9044-CB1369854C57</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,9 +30,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="remarque" id="199B8786-B78A-6C08-66EE-BB170A480803">
+<Column name="remarque" id="77C672D1-F29E-65B0-8813-9BFA34AB2416">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>EC7AC08F-F114-7D93-9636-9ADD1F184CF8</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -41,10 +41,56 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fiche_de_pret_reference" id="4C790B81-37CD-D32D-CDB1-172A69C92053">
+<Column name="pret_site_Li" id="08A3C88A-0DC9-E440-BD4A-73D97C8399B1">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
-<generatorID>6408C574-8EA3-FFE9-616E-0A198C4C7024</generatorID>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>6E6A8CBB-DD8B-7154-2763-5CA4B134DEA1</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C09A7B1C-184B-A248-7350-5AD8F08688BB" referredColumn="0E8617E1-643C-8449-E669-6D77BD3ABAE0"/>
+</associations>
+</Column>
+<Column name="pret_adresse_mail" id="8F2134FF-8FCD-3125-EFEF-8C7956C03D2A">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>B624E8DE-4491-D1F2-98BF-91C0D71F10C3</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C09A7B1C-184B-A248-7350-5AD8F08688BB" referredColumn="C8383760-A470-A0D7-D74D-A0ACD1CD3448"/>
+</associations>
+</Column>
+<Column name="pret_date_creation" id="D3A086A7-7BA1-8437-B7E6-2D49EA1FF7AE">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>A2F316F4-C7FC-CFB5-70EE-6315A10AC773</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C09A7B1C-184B-A248-7350-5AD8F08688BB" referredColumn="DDBDA54D-0BFC-B3B1-33CB-1DF04A258C63"/>
+</associations>
+</Column>
+<Column name="pret_id_glpi" id="F10C44FD-B51A-9753-3A4E-F39452C33545">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>6E625BC6-8DB9-CD26-C0E4-04CC6269BF3A</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,58 +99,35 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="65AF04C5-FF0A-591D-21B5-7FEB7F9715E3" referredColumn="2DA6A7EE-D3C7-4A10-77B8-C5E8FB865404"/>
+<colAssociation fkAssociation="C09A7B1C-184B-A248-7350-5AD8F08688BB" referredColumn="DD3DDADD-6DF0-1084-4AB6-2102015CF598"/>
 </associations>
-</Column>
-<Column name="fiche_de_pret_emprunteur_identifiant" id="7E66E50B-7F0E-8D8F-554B-B0515F353A74">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
-<generatorID>71D07AD0-D69B-671F-5BC1-E37114F0BD51</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="reference" id="D9E695F7-1330-B0D0-F290-3DD308630753">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 19:44:47 UTC</createdTime>
-<generatorID>96B242F7-2EB1-B94B-56C4-E89DD086F7A9</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="AB88E154-9261-A5D9-52CE-27C6D3A921B4" name="remarque_PK">
+<ind_PK_UK id="F32726D0-31D7-9875-9E94-DBE08CFAE686" name="remarque_PK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>4EEB0BD6-6B04-A4D0-61FB-5D223FCA692F</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3673D94A-5ED9-1377-DC70-EBD6FB9BF127"/>
-<colUsage columnID="4C790B81-37CD-D32D-CDB1-172A69C92053"/>
-<colUsage columnID="7E66E50B-7F0E-8D8F-554B-B0515F353A74"/>
+<colUsage columnID="6E5A5ECA-C419-903F-5BE1-D5B09F8E506F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8601EA73-B150-FB99-30E5-A568AB3ADA03" name="remarque_pret_FK">
+<ind_PK_UK id="DFBAF1BA-69CF-B21F-C941-71CBCB68AAF6" name="remarque_pret_FK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:06 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4C790B81-37CD-D32D-CDB1-172A69C92053"/>
+<colUsage columnID="08A3C88A-0DC9-E440-BD4A-73D97C8399B1"/>
+<colUsage columnID="8F2134FF-8FCD-3125-EFEF-8C7956C03D2A"/>
+<colUsage columnID="D3A086A7-7BA1-8437-B7E6-2D49EA1FF7AE"/>
+<colUsage columnID="F10C44FD-B51A-9753-3A4E-F39452C33545"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

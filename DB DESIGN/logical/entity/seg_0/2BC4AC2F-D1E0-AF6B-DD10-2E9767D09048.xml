@@ -4,7 +4,7 @@
 <createdTime>2021-05-22 09:16:43 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,16 +15,17 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="code" id="D89566E1-F283-9192-5D45-D57C3DFF10CD">
+<Attribute name="Li" id="D89566E1-F283-9192-5D45-D57C3DFF10CD">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-22 09:16:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code (octet) de l'équipement]]></commentInRDBMS>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT018</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="designation" id="178129FF-94F9-B604-2488-A789B298BEBA">
@@ -32,7 +33,7 @@
 <createdTime>2021-05-22 09:17:29 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,8 +46,9 @@
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-22 09:17:23 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

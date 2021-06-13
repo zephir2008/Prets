@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="712DCD79-F06B-02A2-FEC2-05F4C3F9617D" name="materiel">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>43D6A1E0-7CE8-0992-BF09-C3FFBD61BD94</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="BF7275D5-67D6-02E0-37F9-9A9AC6E1B12B">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Domaine de valeur disponible]]></commentInRDBMS>
+<generatorID>D79FC582-51CE-7E3D-4BBE-3673939C3A83</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>D7D7BF91-5D9E-F60F-D11E-6325638EE67B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB801AEB-9DEF-47CC-98C8-DBFCB3F14F3C" referredColumn="2B579F2C-BE67-C7BE-3C7A-7AD10F876697"/>
+</associations>
+</Column>
+<Column name="modele" id="8B61F1C2-787B-1CE4-0AB4-DBE6938663C0">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Modèle ou  référence constructeur du matériel]]></commentInRDBMS>
+<generatorID>03381D43-8254-4AF8-1D77-1F42876EAE72</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_glpi" id="DE08E324-8E9E-7B5B-9D0F-0A7BB38F463A">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>3AE27D8F-DB1D-AA2B-8718-465C14387BA6</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serial_number" id="32DFE3B4-3F0C-04B2-D775-658CE599D04D">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[référence (constructeur, S/N, etc.)]]></commentInRDBMS>
+<generatorID>05E8D305-65BB-4112-B17B-665C032D47A9</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C603011E-A5CF-8853-783F-B8B6048089E1" name="materiel_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>065D0E55-5FA5-0B08-44EA-7671AEF517A6</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF7275D5-67D6-02E0-37F9-9A9AC6E1B12B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C88D419-34C4-0C88-FC83-5CA7ED1E2792" name="materiel_PKv1">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>61B89026-F3D0-2DC3-BB85-13C5255CC634</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE08E324-8E9E-7B5B-9D0F-0A7BB38F463A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14510AC5-3750-B935-2728-E13AAA48F455" name="materiel_type_materiel_FK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>F8BB41D4-BDF3-ABAF-872F-80C39F9E9A1C</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF7275D5-67D6-02E0-37F9-9A9AC6E1B12B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

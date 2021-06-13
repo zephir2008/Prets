@@ -7,7 +7,7 @@
 <item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <sourcePk>61B89026-F3D0-2DC3-BB85-13C5255CC634</sourcePk>
-<identifying>false</identifying>
+<identifying>true</identifying>
 <nameOnSource>est rattaché à</nameOnSource>
 <nameOnTarget>référence</nameOnTarget>
 <optionalSource>true</optionalSource>

@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1A59130-E191-3D02-B023-F82E2CB125A7" name="type_materiel">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>2E45127B-D09B-AACA-A376-5E0DBBF2B4B9</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="2B579F2C-BE67-C7BE-3C7A-7AD10F876697">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Domaine de valeur disponible]]></commentInRDBMS>
+<generatorID>D79FC582-51CE-7E3D-4BBE-3673939C3A83</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>D7D7BF91-5D9E-F60F-D11E-6325638EE67B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modele" id="2394EDCA-1A93-5826-CCA9-948D5DCF3A28">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Modèle ou  référence constructeur du matériel]]></commentInRDBMS>
+<generatorID>03381D43-8254-4AF8-1D77-1F42876EAE72</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="556E7F08-93E0-5998-9420-5271A79AAA35" name="type_materiel_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>065D0E55-5FA5-0B08-44EA-7671AEF517A6</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B579F2C-BE67-C7BE-3C7A-7AD10F876697"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

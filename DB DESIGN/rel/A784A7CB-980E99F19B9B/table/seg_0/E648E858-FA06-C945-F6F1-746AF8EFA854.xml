@@ -30,7 +30,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_glpi" id="DDD17548-EFE2-6380-1A6F-9364B5E60AA1">
@@ -57,9 +58,9 @@
 <ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="type" id="4012D723-12CC-989D-57C1-5690DA253CC9">
+<Column name="type" id="4FDD8ABD-9CFA-6CEA-BD71-30037A623F98">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:11:40 UTC</createdTime>
+<createdTime>2021-05-23 19:44:47 UTC</createdTime>
 <commentInRDBMS><![CDATA[Domaine de valeur disponible]]></commentInRDBMS>
 <generatorID>D79FC582-51CE-7E3D-4BBE-3673939C3A83</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
@@ -69,9 +70,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="modele" id="CB233094-A7C0-CA6B-8AC9-10483D949BE6">
+<Column name="modele" id="1A65BDAC-A3E1-CEE9-496F-1B7410B8806A">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:11:40 UTC</createdTime>
+<createdTime>2021-05-23 19:44:47 UTC</createdTime>
 <commentInRDBMS><![CDATA[Modèle ou  référence constructeur du matériel]]></commentInRDBMS>
 <generatorID>03381D43-8254-4AF8-1D77-1F42876EAE72</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>

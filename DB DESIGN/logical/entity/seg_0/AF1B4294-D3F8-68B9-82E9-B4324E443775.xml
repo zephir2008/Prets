@@ -4,7 +4,7 @@
 <createdTime>2021-05-22 09:24:48 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2021-05-22 09:25:02 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2021-05-22 09:26:16 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,39 +44,68 @@
 <createdTime>2021-05-22 09:26:56 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT036</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="reference" id="6408C574-8EA3-FFE9-616E-0A198C4C7024">
+<Attribute name="Li" id="6E6A8CBB-DD8B-7154-2763-5CA4B134DEA1">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 09:27:52 UTC</createdTime>
+<createdTime>2021-06-13 12:31:33 UTC</createdTime>
 <generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
-<referedAttribute>C2561244-A59D-6AE3-374A-83737691D97B</referedAttribute>
+<referedAttribute>F260735D-5866-1CF4-0042-008BA8CACD39</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresse_mail" id="B624E8DE-4491-D1F2-98BF-91C0D71F10C3">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:32:56 UTC</createdTime>
+<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>5203015F-1D03-0265-0768-5CAA0DF014BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_creation" id="A2F316F4-C7FC-CFB5-70EE-6315A10AC773">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:33:25 UTC</createdTime>
+<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>AE997DFD-8E56-B2D0-37E1-22A8CBA76EC4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_glpi" id="6E625BC6-8DB9-CD26-C0E4-04CC6269BF3A">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:34:32 UTC</createdTime>
+<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<referedAttribute>C64AFE0D-43F0-2FF9-6A6A-41F6934861DB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="identifiant" id="71D07AD0-D69B-671F-5BC1-E37114F0BD51">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-22 09:27:52 UTC</createdTime>
-<generatorID>9EF8E6AE-5D54-EAB9-C315-34FA99A4AFA7</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
-</engineerTo>
-<referedAttribute>028EDBB8-E9E3-D115-EE4B-364E1A924661</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -85,14 +114,13 @@
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-22 09:26:09 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="CE8C28C8-8DC7-7EFC-5EDB-367A79AE85A3" value="true"/>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>DD260FE6-3338-6F78-D86A-3DB80E9199B0</attributeRef>
-<attributeRef>6408C574-8EA3-FFE9-616E-0A198C4C7024</attributeRef>
-<attributeRef>71D07AD0-D69B-671F-5BC1-E37114F0BD51</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -8,19 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="etat_materiel_ID" id="D942AB54-6615-B954-F7B9-848BFCCD1A26">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:10:04 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
-<identityColumn>true</identityColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<isSurrogateColumn>true</isSurrogateColumn>
-</Column>
 <Column name="contenu_etat" id="44C22B47-0544-4EF7-1697-BACD45971051">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 17:58:06 UTC</createdTime>
@@ -42,27 +29,29 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="70DD4D98-C956-74E1-6520-9B79D1B8C631" referredColumn="9FEC1CB6-C8A6-C1AD-EA2E-C4A673BFFB90"/>
 </associations>
 </Column>
-<Column name="indice" id="64F4D2CE-7C92-8934-3B7A-04C8D0761A56">
+<Column name="indice" id="A3E138CE-EBD4-C6E9-C37F-F17D50336264">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:11:40 UTC</createdTime>
+<createdTime>2021-05-23 19:39:42 UTC</createdTime>
 <generatorID>BDFC4EF4-F0F4-878A-61FB-AB9C77BCD1B0</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="label" id="A2084BCC-28AB-B6C2-DFB9-4A7CB1235D29">
+<Column name="label" id="085972AD-5744-AC4F-71D2-39F750AAB435">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:11:40 UTC</createdTime>
+<createdTime>2021-05-23 19:44:47 UTC</createdTime>
 <generatorID>8D3EAEDB-C3CE-957A-2268-E557E4222D88</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -74,17 +63,19 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="66D15323-ACCA-E0B9-75CD-F05F3DAF30B8" name="etat_materiel_PK">
+<ind_PK_UK id="84F60D5F-2572-0658-8F7D-D6C73CE8290E" name="etat_materiel_PK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 18:10:04 UTC</createdTime>
+<createdTime>2021-05-23 19:40:59 UTC</createdTime>
+<generatorID>15E4B135-14A5-822C-899B-5DFE3461C476</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D942AB54-6615-B954-F7B9-848BFCCD1A26"/>
+<colUsage columnID="A3E138CE-EBD4-C6E9-C37F-F17D50336264"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="22AC5668-CE3A-01AE-F3EB-8ABF5BAD4D55" name="etat_materiel_PK">
+<ind_PK_UK id="22AC5668-CE3A-01AE-F3EB-8ABF5BAD4D55" name="etat_materiel_PKv1">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 18:00:10 UTC</createdTime>
 <generatorID>DBF6CB6E-557D-7E93-B49A-443D12601431</generatorID>
@@ -102,6 +93,39 @@
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="E5E98FCB-8BFB-53AA-A4DF-61D63C2D7957" name="etat_materiel_materiel_identification_UN">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 19:22:53 UTC</createdTime>
+<generatorID>2326B38A-DD9E-3550-5C62-9095110603E4</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="150BFB2C-D980-7A31-FD8C-E4FB3FF32809"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27FF69D4-1356-5F58-8898-135415F008C6" name="etat_materiel_PKv2">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 19:22:53 UTC</createdTime>
+<generatorID>D9834032-596E-7C87-DA9F-453867D452B2</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="150BFB2C-D980-7A31-FD8C-E4FB3FF32809"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36BD0B3A-B525-D51A-EA07-55D0C9E189F2" name="etat_materiel_PKv3">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 19:22:53 UTC</createdTime>
+<generatorID>C4B91773-2E76-E48B-5F6A-957E2AE4B5D9</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="150BFB2C-D980-7A31-FD8C-E4FB3FF32809"/>
+</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="1EEE2562-83BA-DB75-2689-052F2B56923F" name="etat_materiel_materiel_FK">
 <createdBy>phi4conseil</createdBy>

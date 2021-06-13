@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29C357B7-E3AA-44EE-8879-CD05A91805D3" name="etat_materiel">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>8080311E-850B-4A3A-ACDD-C43FC4A17DEF</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="label" id="0EDE7B14-95DA-150F-6684-22AFFB634DD6">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>8D3EAEDB-C3CE-957A-2268-E557E4222D88</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F509577-633B-1905-D271-4CF028EA0F73" name="etat_materiel_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>15E4B135-14A5-822C-899B-5DFE3461C476</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EDE7B14-95DA-150F-6684-22AFFB634DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

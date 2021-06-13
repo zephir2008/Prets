@@ -44,4 +44,18 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="065D0E55-5FA5-0B08-44EA-7671AEF517A6" name="type_materiel PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:34:38 UTC</createdTime>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<engineerTo>
+<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D79FC582-51CE-7E3D-4BBE-3673939C3A83</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

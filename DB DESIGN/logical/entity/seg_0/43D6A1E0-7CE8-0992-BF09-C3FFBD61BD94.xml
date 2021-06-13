@@ -4,6 +4,7 @@
 <createdTime>2021-05-22 09:28:24 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
+<item key="DC55B95D-4872-B146-54A6-B6E2A31CD266" value="true"/>
 <item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -16,23 +17,12 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="identification" id="0861EEDB-8885-E0F0-E551-20BE544FF6CD">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:51:23 UTC</createdTime>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<engineerTo>
-<item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_glpi" id="3AE27D8F-DB1D-AA2B-8718-465C14387BA6">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-22 09:28:30 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
+<item key="DC55B95D-4872-B146-54A6-B6E2A31CD266" value="true"/>
 <item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,6 +36,7 @@
 <commentInRDBMS><![CDATA[référence (constructeur, S/N, etc.)]]></commentInRDBMS>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <engineerTo>
+<item key="DC55B95D-4872-B146-54A6-B6E2A31CD266" value="true"/>
 <item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,13 +51,13 @@
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 17:47:47 UTC</createdTime>
 <ownerDesignName>DB DESIGN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
+<item key="DC55B95D-4872-B146-54A6-B6E2A31CD266" value="true"/>
 <item key="A784A7CB-D2FE-46CC-4661-980E99F19B9B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0861EEDB-8885-E0F0-E551-20BE544FF6CD</attributeRef>
+<attributeRef>3AE27D8F-DB1D-AA2B-8718-465C14387BA6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

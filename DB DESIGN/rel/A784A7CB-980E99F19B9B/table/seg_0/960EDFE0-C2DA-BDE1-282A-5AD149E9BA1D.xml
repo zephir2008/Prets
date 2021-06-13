@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="960EDFE0-C2DA-BDE1-282A-5AD149E9BA1D" name="fiche_de_pret">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="960EDFE0-C2DA-BDE1-282A-5AD149E9BA1D" name="pret">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 17:58:05 UTC</createdTime>
 <generatorID>0E4C9315-6918-BD6E-A32A-BE1A151FAA94</generatorID>
@@ -27,6 +27,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -79,6 +80,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -88,20 +90,31 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0C7E6805-55F9-5184-769C-D890676E9C45" name="fiche_de_pret_PK">
+<ind_PK_UK id="1DCA7A65-F2C5-DF9D-41F8-E40E9BB13038" name="pret_PK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
-<generatorID>4E12BBAC-6891-0E3E-902A-835F7519B20F</generatorID>
+<createdTime>2021-05-23 19:44:47 UTC</createdTime>
+<generatorID>55E1EA77-4951-A495-B47A-90741C669465</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2DA6A7EE-D3C7-4A10-77B8-C5E8FB865404"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C7E6805-55F9-5184-769C-D890676E9C45" name="fiche_de_pret_PK">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<generatorID>4E12BBAC-6891-0E3E-902A-835F7519B20F</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DA6A7EE-D3C7-4A10-77B8-C5E8FB865404"/>
 <colUsage columnID="F731928B-C1F3-5332-BC70-4ADC2BBA657A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F3327EEC-AA65-2E52-0CE4-D9ED76B09C4F" name="fiche_de_pret_site_FK">
+<ind_PK_UK id="F3327EEC-AA65-2E52-0CE4-D9ED76B09C4F" name="pret_site_FK">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 17:58:06 UTC</createdTime>
 <generatorID>FEA576D5-A9AC-FE5A-5526-150BDE0D35D7</generatorID>
@@ -112,7 +125,7 @@
 <colUsage columnID="7B8233B2-EF30-0B68-5EE2-C533C51D4B60"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C96867D8-A10A-E983-388E-8EB5A55DF7FD" name="fiche_de_pret_emprunteur_FK">
+<ind_PK_UK id="C96867D8-A10A-E983-388E-8EB5A55DF7FD" name="pret_emprunteur_FK">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 17:58:06 UTC</createdTime>
 <generatorID>34225A53-1E9A-0A45-7AA7-0763BAAFB5F1</generatorID>
@@ -123,7 +136,7 @@
 <colUsage columnID="F731928B-C1F3-5332-BC70-4ADC2BBA657A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AFF90B60-2821-9B1E-58CE-999F9DC479FB" name="fiche_de_pret_materiel_FK">
+<ind_PK_UK id="AFF90B60-2821-9B1E-58CE-999F9DC479FB" name="pret_materiel_FK">
 <createdBy>phi4conseil</createdBy>
 <createdTime>2021-05-23 17:58:06 UTC</createdTime>
 <generatorID>F02C5C3B-9766-99BC-113E-19241801D866</generatorID>

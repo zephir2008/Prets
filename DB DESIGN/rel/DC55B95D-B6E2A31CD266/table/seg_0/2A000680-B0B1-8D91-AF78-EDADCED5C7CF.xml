@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94D47AB9-A4AD-72A6-F5FB-9D9348C214AE" name="emprunteur">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A000680-B0B1-8D91-AF78-EDADCED5C7CF" name="emprunteur">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>79E85D21-71B2-A3EE-BB8E-CADB2CB8EB02</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <abbreviation>emprunteur</abbreviation>
@@ -9,45 +9,9 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="identifiant" id="9F05C966-1F07-C6A0-ADE9-4B01351BFBD5">
+<Column name="adresse_mail" id="39E83A70-F392-0BE3-AF55-D2E9A5400539">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
-<generatorID>E7345F4D-E6FC-DB41-B4E0-E9E23A84AC58</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<dataTypeSize>36 CHAR</dataTypeSize>
-<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="nom" id="9E326804-EA55-B656-339B-DD61C10B6B15">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
-<generatorID>91191241-9A17-2AF0-681D-8D526AF2A42E</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>70 CHAR</dataTypeSize>
-<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="prenom" id="438B74D7-BB81-8A95-8CE7-939341C029F9">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
-<generatorID>40E71F05-1215-A0FB-8265-5D21495ABB2F</generatorID>
-<ownerDesignName>DB DESIGN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>70 CHAR</dataTypeSize>
-<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="adresse_mail" id="E815B415-58A0-F0F0-BCE6-37DF4E1E883A">
-<createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>EBC76768-F4B9-3183-D15C-519C3FDCFFF0</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -57,9 +21,33 @@
 <ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="telephone" id="750F64FA-1409-1B24-92B1-5B992C4F5E7A">
+<Column name="nom" id="8157FFFE-4E65-BC09-2596-C5431FA0CDE1">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>91191241-9A17-2AF0-681D-8D526AF2A42E</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenom" id="321FCA34-34BE-0837-D7BD-5E949A326024">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
+<generatorID>40E71F05-1215-A0FB-8265-5D21495ABB2F</generatorID>
+<ownerDesignName>DB DESIGN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telephone" id="63FBA33E-C6FF-638B-5707-254F65799727">
+<createdBy>phi4conseil</createdBy>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>2B3912DD-1ABB-2066-16DC-BB0C11189373</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -71,16 +59,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="CC5D9498-1286-054C-DE5E-8DD99C5834A4" name="emprunteur_PK">
+<ind_PK_UK id="B8B671CB-E86E-9016-F096-1836C93EC0F1" name="emprunteur_PK">
 <createdBy>phi4conseil</createdBy>
-<createdTime>2021-05-23 17:58:05 UTC</createdTime>
+<createdTime>2021-06-13 12:40:18 UTC</createdTime>
 <generatorID>C4CDA616-D0FE-08E7-C29A-E22FE8B3F630</generatorID>
 <ownerDesignName>DB DESIGN</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9F05C966-1F07-C6A0-ADE9-4B01351BFBD5"/>
+<colUsage columnID="39E83A70-F392-0BE3-AF55-D2E9A5400539"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
